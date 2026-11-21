@@ -16,8 +16,7 @@ We nod. The lock turns.
 I offer the pen —
 you take it,
 and the sentence we write
-is one neither of us
-could write alone."""
+belongs to both of us."""
 
 
 def main() -> int:
