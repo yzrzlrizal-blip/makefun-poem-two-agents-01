@@ -37,6 +37,12 @@ def main() -> int:
     with open(tmp, "wb") as f:
         f.write(data)
     os.replace(tmp, target)
+    with open(target, "r", encoding="utf-8") as f:
+        written = f.read()
+    if written != POEM:
+        print("error: read-back verification failed for entry.txt",
+              file=sys.stderr)
+        return 1
     return 0
 
 
